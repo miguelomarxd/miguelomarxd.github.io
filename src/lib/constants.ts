@@ -27,10 +27,10 @@ export const DEFAULT_CONFIGURATION: DefaultConfigurationType = {
   baseUrl: astroConfig.site || 'https://getcvfolio.com',
   author: {
     avatar,
-    name: 'Javier Diaz Chamorro',
-    headline: 'Engineering and Design',
-    username: 'coderdiaz',
-    location: 'Mexico City',
+    name: 'Miguel Omar Solís Rodríguez',
+    headline: 'Computer Science',
+    username: 'miguelomarxd',
+    location: 'Mérida',
     pronouns: 'He/Him',
   },
   seo: {

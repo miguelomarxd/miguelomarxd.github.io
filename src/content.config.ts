@@ -42,8 +42,10 @@ const jobCollection = defineCollection({
     title: z.string(),
     company: z.string(),
     location: z.string(),
-    from: z.number(),
-    to: z.number().or(z.enum(['Now'])),
+    // from: z.string().regex(/^\d{2}\/\d{4}$/, { message: 'Expected format MM/YYYY' }),
+    // to: z.string().regex(/^\d{2}\/\d{4}$/).or(z.literal('Now')),
+    from: z.number().or(z.string()),
+    to: z.number().or(z.enum(['Now'])).or(z.string()),
     url: z.string(),
   }),
 });
@@ -52,7 +54,7 @@ const talkCollection = defineCollection({
   loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/talks' }),
   schema: z.object({
     title: z.string(),
-    year: z.number(),
+    year: z.number().or(z.string()),
     event: z.string(),
     location: z.string(),
     url: z.string(),

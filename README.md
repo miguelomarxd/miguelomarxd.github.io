@@ -1,4 +1,4 @@
 # Miguel Omar Resume
 
-- Link: **[resume»](https://miguelomarxd.github.io/)**
+- Link: **[resume»](https://migueloomar.github.io/)**
 
